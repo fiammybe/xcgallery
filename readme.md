@@ -1,4 +1,4 @@
-#xcGal
+# xcGal
 an image galery for ImpressCMS
 
 
