@@ -1,13 +1,13 @@
 <?php
 // $Id$
 //  ------------------------------------------------------------------------ //
-//                    xcGal 2.0 - XOOPS Gallery Modul                        //
+//                    xcGal 3.0 - ImpressCMS Gallery Module                  //
 //  ------------------------------------------------------------------------ //
 //  Based on      xcGallery 1.1 RC1 - XOOPS Gallery Modul                    //
 //                    Copyright (c) 2003 Derya Kiran                         //
 //  ------------------------------------------------------------------------ //
 //  Based on Coppermine Photo Gallery 1.10 http://coppermine.sourceforge.net///
-//                      developed by Gr�gory DEMAR                           //
+//                      developed by Grégory DEMAR                           //
 //  ------------------------------------------------------------------------ //
 //  This program is free software; you can redistribute it and/or modify     //
 //  it under the terms of the GNU General Public License as published by     //
@@ -28,13 +28,14 @@
 //  along with this program; if not, write to the Free Software              //
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA //
 //  ------------------------------------------------------------------------ //
-$modversion['name'] = 'xcGallery';
-$modversion['version'] = '2.04';
-$modversion['description'] = 'Gallery module for Xoops 2.2 and higher based on xcgal 1.1 RC what is based on Coppermine 1.10 &copy; Gr�gory DEMAR (http://coppermine.sourceforge.net)';
+$modversion['name'] = 'xcGal';
+$modversion['version'] = '3.0.0';
+$modversion['status'] = "Alpha";
+$modversion['description'] = 'an Image Gallery module for ImpressCMS 2';
 $modversion['credits'] = "http://dev.xoops.org";
-$modversion['author'] = "Vers. 1.1: Derya Kiran, edited for Xoops 2.2 by mcleines";
+$modversion['author'] = "skenow";
 $modversion['help'] = "top.html";
-$modversion['license'] = "GPL see LICENSE";
+$modversion['license'] = "GPL see COPYING";
 $modversion['official'] = 1;
 $modversion['image'] = "images/slogo.png";
 $modversion['dirname'] = basename(dirname(__FILE__));
@@ -43,7 +44,9 @@ $modversion['dirname'] = basename(dirname(__FILE__));
 $modversion['hasAdmin'] = 1;
 $modversion['adminindex'] = "admin/index.php";
 $modversion['adminmenu'] = "admin/menu.php";
-
+$modversion['status_version'] = $modversion['version'] . ' ' . $modversion['status'];
+$modversion['date'] = "25 Mar 2025";
+$modversion['warning'] = _CO_ICMS_WARNING_ALPHA;
 // Menu
 $modversion['hasMain'] = 1;
 //search
@@ -561,4 +564,3 @@ $modversion['config'][] = array(
 	'formtype' => 'yesno',
 	'valuetype' => 'int',
 	'default' => 1);
-?>
